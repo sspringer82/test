@@ -42,3 +42,23 @@ describe('ajax', () => {
     jasmine.Ajax.uninstall();
   });
 });
+
+describe('getUser', () => {
+  it('should get the user', async () => {
+    fetchMock.mock('https://www.google.de/secretuser', {
+      body: JSON.stringify([
+        { name: 'Peter' },
+        { name: 'Paul' },
+        { name: 'Mary' },
+      ]),
+      status: 200,
+    });
+    const user = await getUser();
+    expect(user).toEqual([
+      { name: 'Peter' },
+      { name: 'Paul' },
+      { name: 'Mary' },
+    ]);
+    fetchMock.restore();
+  });
+});
