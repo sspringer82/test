@@ -43,7 +43,7 @@ describe('ajax', () => {
   });
 });
 
-describe('getUser', () => {
+xdescribe('getUser', () => {
   it('should get the user', async () => {
     fetchMock.mock('https://www.google.de/secretuser', {
       body: JSON.stringify([
