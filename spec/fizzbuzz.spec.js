@@ -47,4 +47,14 @@ describe('FizzBuzz', function() {
     const result = fb.run(-19);
     expect(result).toBe(-19);
   });
+  it('should throw an error if a string is provided', () => {
+    // try {
+    //   const result = fb.run('1');
+    //   expect(false).toBeTruthy();
+    // } catch (e) {
+    //   expect(e instanceof Error).toBeTruthy();
+    // }
+
+    expect(() => fb.run('1')).toThrow();
+  });
 });
