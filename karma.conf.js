@@ -13,7 +13,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'node_modules/jasmine-ajax/lib/mock-ajax.js',
-      'lib/*.js',
+      'node_modules/fetch-mock/dist/es5/client-bundle.js',
       'src/*.js',
       'spec/*.spec.js',
     ],
