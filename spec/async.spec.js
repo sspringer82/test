@@ -24,8 +24,12 @@ describe('async', () => {
   });
 
   it('should work', done => {
-    myAsyncFunction2().then(value => {
+    jasmine.clock().install();
+    const p = myAsyncFunction2();
+    jasmine.clock().tick(1000);
+    p.then(value => {
       expect(value).toBe(42);
+      jasmine.clock().uninstall();
       done();
     });
   });
