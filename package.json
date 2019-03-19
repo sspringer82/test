@@ -11,14 +11,19 @@
   },
   "dependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:server": "karma start",
+    "test:client": "karma run"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sspringer82/test.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Sebastian Springer",
+    "twitter": "@basti_springer",
+    "email": "sebastian.springer@maibornwolff.de"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sspringer82/test/issues"
