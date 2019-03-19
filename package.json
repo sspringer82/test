@@ -9,7 +9,10 @@
     "karma-jasmine": "^2.0.1",
     "karma": "^4.0.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "fetch-mock": "^7.3.1",
+    "jasmine-ajax": "^3.4.0"
+  },
   "scripts": {
     "test:init": "karma init",
     "test:server": "karma start",
