@@ -1,5 +1,5 @@
 describe('myAsyncFunction', () => {
-  fit('should return 42', done => {
+  it('should return 42', done => {
     // arrange
     const cb = function(value) {
       // assert
